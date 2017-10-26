@@ -8,6 +8,15 @@ include(OssimUtilities)
 
 set(requiredLibs)
 
+# We will allow for building of the csm plugin outside of 
+# OSSIM main build
+#
+if (NOT OSSIM_FOUND)
+  find_package(ossim)
+  include_directories(${OSSIM_INCLUDE_DIR})
+endif(NOT OSSIM_FOUND)
+
+
 # csmApi - Required:
 find_package(CsmApi)
 if (CSMAPI_FOUND)
