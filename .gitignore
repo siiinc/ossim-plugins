@@ -1,2 +1,4 @@
 csm3/src/ossimCsm3Config.h
-
+**/debug/*
+**/release/*
+**/cmake-*

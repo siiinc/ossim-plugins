@@ -1,0 +1,5 @@
+{
+	"graph-id": "9d0aed24efb47bebcdf6b6183c78dfe3f9e5ee556e8ecb7e7e11aac19695ec89",
+	"node-id": "Orthorectify_6bjyqo",
+	"options": {"idaho-api": "https://idahoapitest.geobigdata.io", "delete-on-close": true}
+}
