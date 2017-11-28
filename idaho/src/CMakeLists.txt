@@ -17,6 +17,15 @@ else(OSSIM_FOUND)
    message(FATAL_ERROR "Could not find ossim")
 endif(OSSIM_FOUND)
 
+# BOOST - Required: 
+find_package(Boost)
+if(Boost_FOUND)
+   include_directories( ${Boost_INCLUDE_DIR} )
+   set( requiredLibs ${requiredLibs} ${Boost_LIBRARIES} )
+else(Boost_FOUND)
+   message(FATAL_ERROR "Could not find Boost")
+endif(Boost_FOUND)
+
 
 find_package(IDAHO)
 if(IDAHO_FOUND)
